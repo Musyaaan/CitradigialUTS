@@ -117,3 +117,7 @@ Kesimpulan
 
 Operasi morfologi pada citra biner merupakan metode penting dalam pengolahan citra digital untuk menganalisis bentuk dan struktur objek.
 Dengan menerapkan kombinasi antara filter spasial dan operasi morfologi dasar maupun turunan, citra dapat diproses menjadi lebih bersih, informatif, dan siap digunakan untuk tahap analisis selanjutnya.
+
+```Install
+pip install numpy opencv-python matplotlib
+```
