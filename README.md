@@ -1,4 +1,4 @@
-# CitradigialUTS  
+# Citra digital UTS - Materi Pertemuan 5  
 **For the Midterm Exam Assignment**
 
 ---
