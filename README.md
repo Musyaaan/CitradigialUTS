@@ -39,6 +39,7 @@ Operasi ini bekerja dengan menggunakan elemen struktural (structuring element) u
 Tujuan utama dari operasi morfologi adalah untuk memperbaiki struktur objek, menghilangkan noise, menyambungkan bagian objek yang terputus, serta mengekstraksi fitur tertentu dari gambar.
 Operasi Morfologi Dasar
 Empat operasi dasar yang paling umum digunakan dalam morfologi citra adalah sebagai berikut.
+
 a. Erosi (Erosion)
 Operasi erosi adalah kebalikan dari operasi dilasi. Pada operasi ini, ukuran objek diperkecil dengan mengikis sekeliling objek. 
 Cara yang dapat dilakukan juga ada 2, yaitu 
@@ -49,7 +50,6 @@ b. Dilasi (Dilation)
 Operasi dilasi Dilakukan untuk memperbesar ukuran segmen objek dengan menambah lapisan di sekeliling objek. Terdapat 2 cara untuk melakukan operasi ini, yaitu dengan cara mengubah semua titik latar yang bertetangga dengan titik  batas menjadi titik objek, atau lebih mudahnya set setiap titik yang tetangganya adalah titik objek menjadi titik objek. Cara kedua yaitu dengan mengubah semua titik di sekeliling titik batas menjadi titik objek, atau lebih mudahnya set semua titik tetangga sebuah titik objek menjadi titik objek.
 
 c. Opening
-
 Operasi opening  merupakan kombinasi antara operasi erosi dan dilasi yang dilakukan secara berurutan, tetapi citra asli dierosi terlebih dahulu baru kemudian hasilnya didilasi. Operasi ini digunakan untuk memutus bagian-bagian dari objek yang hanya terhubung dengan 1 atau 2 buah titik saja, atau menghilangkan objekobjek kecil dan secara umum men smoothkan batas dari objek besar tanpa mengubah area objek secara signifikan. 
 
 d. Closing
@@ -68,18 +68,15 @@ Operasi Morfologi Turunan
 Selain operasi dasar, terdapat beberapa operasi morfologi turunan yang memberikan hasil analisis lebih kompleks terhadap bentuk dan struktur objek.
 
 a. Gradient Morfologi
-Operasi ini menunjukkan perbedaan antara hasil dilasi dan erosi.
-Gradient digunakan untuk mendeteksi tepi objek.
+Operasi ini menunjukkan perbedaan antara hasil dilasi dan erosi. Gradient digunakan untuk mendeteksi tepi objek.
 gradient = cv2.morphologyEx(binary, cv2.MORPH_GRADIENT, kernel)
 
 b. Top Hat
-Menunjukkan perbedaan antara citra asli dan hasil operasi opening.
-Top Hat digunakan untuk menyoroti detail kecil yang lebih terang dari latar belakang.
+Menunjukkan perbedaan antara citra asli dan hasil operasi opening. Top Hat digunakan untuk menyoroti detail kecil yang lebih terang dari latar belakang.
 tophat = cv2.morphologyEx(binary, cv2.MORPH_TOPHAT, kernel)
 
 c. Black Hat
-Menunjukkan perbedaan antara hasil closing dan citra asli.
-Black Hat digunakan untuk menyoroti area gelap pada latar belakang yang terang.
+Menunjukkan perbedaan antara hasil closing dan citra asli. Black Hat digunakan untuk menyoroti area gelap pada latar belakang yang terang.
 blackhat = cv2.morphologyEx(binary, cv2.MORPH_BLACKHAT, kernel)
 
 Setiap operasi turunan memiliki fungsi analisis yang spesifik, tergantung pada kebutuhan dan jenis citra yang diolah.
