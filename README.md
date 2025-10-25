@@ -51,13 +51,13 @@ Operasi ini bekerja dengan menggunakan structuring element untuk memodifikasi su
 
 Tujuan utamanya adalah:
 
-Memperbaiki struktur objek
+1. Memperbaiki struktur objek
 
-Menghilangkan noise
+2. Menghilangkan noise
 
-Menyambungkan bagian objek yang terputus
+3. Menyambungkan bagian objek yang terputus
 
-Mengekstraksi fitur tertentu dari gambar
+4. Mengekstraksi fitur tertentu dari gambar
 
 Operasi Morfologi Dasar
 a. Erosi (Erosion)
