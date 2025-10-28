@@ -1,6 +1,12 @@
 # Citra digital UTS - Materi Pertemuan 5  
 **For the Midterm Exam Assignment**
+Nama : Muhammad Syauqi Nadhifasla Waluyo 
 
+Kelas : 05 TPLP 009
+
+Mata Kuliah : Citra Digital
+
+Dosen : Arya Adhyaksa Waskita
 ---
 
 ## Review Filter Spasial
